@@ -11,6 +11,7 @@ module.exports = function (app) {
     });
 
     app.get("/exercise", function (req, res) {
+        console.log("we hit exercise route")
         res.sendFile(path.join(__dirname, "../public/exercise.html"));
     });
 
