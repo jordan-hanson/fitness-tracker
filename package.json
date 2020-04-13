@@ -19,6 +19,7 @@
   "homepage": "https://github.com/jordan-hanson/fitness-tracker#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.9.7"
+    "mongoose": "^5.9.7",
+    "morgan": "^1.10.0"
   }
 }
