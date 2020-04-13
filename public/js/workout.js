@@ -10,7 +10,7 @@ async function initWorkout() {
       date: formatDate(lastWorkout.day),
       totalDuration: lastWorkout.totalDuration,
       numExercises: lastWorkout.exercises.length,
-      ...tallyExercises(lastWorkout.exercises)
+      ...tallyExercises(lastWorkout.exercises),
     };
 
     renderWorkoutSummary(workoutSummary);
@@ -45,7 +45,6 @@ function formatDate(date) {
 }
 
 function renderWorkoutSummary(summary) {
-  console.log('Summary about to ', summary)
   const container = document.querySelector(".workout-stats");
 
   const workoutKeyMap = {
