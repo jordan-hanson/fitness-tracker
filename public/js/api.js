@@ -9,7 +9,7 @@ const API = {
     const json = await res.json();
     var lastExercise = json[json.length - 1];
     // console.log("duration res", json[json.length - 1])
-    lastExercise.totalDuration = 80
+    lastExercise.totalDuration = 80;
     return json[json.length - 1];
   },
   async addExercise(data) {
